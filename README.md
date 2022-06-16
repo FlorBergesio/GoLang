@@ -42,6 +42,29 @@ El scope de las variables, métodos y funciones se determina de la siguiente man
 - Se pueden asignar variables dentro de la sentencia if y estas variables serán accesibles en el cuerpo del switch: switch numero := 5; numero { case 1: ... }
 - No hace falta utilizar el break
 
+## Sentencia for
+- No hace falta usar los paréntesis a menos que sea necesario agrupar condiciones
+- Reemplaza a todas las otras sentencias de ciclos disponibles en otro lenguajes
+- No hace falta inicializar la variable i en el ciclo, se puede inicializar afuera
+- No hace falta agregar un incremento a i en el ciclo, se puede agregar en el cuerpo del ciclo
+- No hace falta agregar una condición de checkeo en el ciclo, se puede dejar vacío y salir del mismo con un break
+- Por ejemplo, puede haber un for {...} que se ejecutará indefinidamente, hasta que algo dentro del cuerpo llege a una sentencia break
+- Se puede utilizar la sentencia continue para mandar la ejecución al inicio del ciclo for en una nueva iteracion
+
+## Sentencia goto
+- Se puede definir un inicio de bloque utilizando un nombre en mayusculas y dos puntos. Ejemplo -> RUTINA:
+- Se puede redireccionar el flujo de ejecución a este bloque utilizando la sentencia goto RUTINA
+
+## Funciones
+- Estructura: func nombre_funcion(nombre_parametro tipo_de_dato, nombre_parametro tipo_de_dato) (tipo_de_dato_return, tipo_de_dato_return) {... return valor, valor}
+- No hace falta usar los parentesis en el tipo de dato de retorno si solo es 1
+- Podemos recuperar los datos de return de esta forma: var1, var2 := nombre_funcion(parametros)
+- Se puede definir un nombre de variable para un valor de retorno, en ese caso al escribir unicamente return se retornará el valor actual de dicha variable
+- No existe la sobrecarga de funciones en Go
+- Podemos definir que una funcion puede recibir un numero indefinido de parametros, usando la funcion range y el "_" para el valor de retorno que no nos interesa: suma(numero ...int) {
+    for _, num := range numero{...}
+}
+
 ## Librerias utiles
 - fmt: permite mostrar textos por pantalla
 - os: permite manejar cuestiones del sistema operativo
