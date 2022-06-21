@@ -65,6 +65,11 @@ El scope de las variables, métodos y funciones se determina de la siguiente man
     for _, num := range numero{...}
 }
 
+## Funciones anónimas
+- Se pueden definir variables del tipo func que contengan funciones anónimas, las cuales pueden cambiar en tiempo de ejecución
+- Se debe respetar la definicion inicial de parametros y valores de return
+
+
 ## Librerias utiles
 - fmt: permite mostrar textos por pantalla
 - os: permite manejar cuestiones del sistema operativo
