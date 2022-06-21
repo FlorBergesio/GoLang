@@ -69,6 +69,9 @@ El scope de las variables, métodos y funciones se determina de la siguiente man
 - Se pueden definir variables del tipo func que contengan funciones anónimas, las cuales pueden cambiar en tiempo de ejecución
 - Se debe respetar la definicion inicial de parametros y valores de return
 
+### Closures
+- Pueden acceder a variables creadas fuera de la función (en la función "original")
+- Si se ejecuta varias veces la función, el código dentro de la funcion original pero fuera del closure solo se ejecutará la primera vez
 
 ## Librerias utiles
 - fmt: permite mostrar textos por pantalla
