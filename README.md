@@ -73,6 +73,16 @@ El scope de las variables, métodos y funciones se determina de la siguiente man
 - Pueden acceder a variables creadas fuera de la función (en la función "original")
 - Si se ejecuta varias veces la función, el código dentro de la funcion original pero fuera del closure solo se ejecutará la primera vez
 
+## Vectores
+- Los vectores no pueden variar sus dimensiones en tiempo real
+
+### Slices
+- Vectores que pueden variar sus dimensiones en tiempo real
+- Se definen al no indicar la longitud en los corchetes. Ej: slice:= []int
+- También se pueden crear utilizando la función make, la cual acepta los parámetros de longitud inicial y maximo de longitud reservada en memorita. Ej: slice := make([]int,5,20)
+- El largo de un slice se puede obtener con len(nombreSlice), mientras que la capacidad máxima reservada en memoria se puede obtener con cap(nombreSlice)
+- Se pueden agregar elementos mas alla de la capacidad definida, pero deberá hacerse con append(nombreSlice, elemento). En este caso si no se define un cap, se definirá automaticamente segun una potencia de 2
+
 ## Librerias utiles
 - fmt: permite mostrar textos por pantalla
 - os: permite manejar cuestiones del sistema operativo
