@@ -3,20 +3,18 @@ package main
 import (
 	"fmt"
 	"time"
+
+	us "structs/user"
 )
 
-// Definición de estructura - equivalente a definir una clase
-type usuario struct {
-	Id        int
-	Nombre    string
-	FechaAlta time.Time
-	Status    bool
+// Herencia
+type userAdmin struct {
+	us.Usuario
 }
 
 func main() {
-	User := new(usuario)
-	User.Id = 10
-	User.Nombre = "Maria"
+	User := new(userAdmin)
+	User.AltaUsuario(1, "Maria", time.Now(), true)
 
 	fmt.Println(User)
 }
