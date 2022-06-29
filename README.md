@@ -83,6 +83,13 @@ El scope de las variables, métodos y funciones se determina de la siguiente man
 - El largo de un slice se puede obtener con len(nombreSlice), mientras que la capacidad máxima reservada en memoria se puede obtener con cap(nombreSlice)
 - Se pueden agregar elementos mas alla de la capacidad definida, pero deberá hacerse con append(nombreSlice, elemento). En este caso si no se define un cap, se definirá automaticamente segun una potencia de 2
 
+### Maps
+- Los mapas permiten crear pares de clave y valor asociado.
+- Pueden crearse con la función make, indicando el tipo de la clave entre corchetes y el tipo del valor asociado. Ej: make(map[string]int)
+- Los elementos del maps se ordenan alfabeticamente por la clave
+- Se puede añadir un elemento con una asignación, y eliminar un elemento con la función delete
+- Si queremos recorrer un map en un orden diferente al alfabetico, podemos utilizar un for con 2 variables y range
+
 ## Librerias utiles
 - fmt: permite mostrar textos por pantalla
 - os: permite manejar cuestiones del sistema operativo
@@ -90,3 +97,5 @@ El scope de las variables, métodos y funciones se determina de la siguiente man
 
 ### Paquete fmt - verbos
 - %d - numérico, base 10
+- %s - string
+- %t - boolean
