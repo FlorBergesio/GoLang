@@ -90,10 +90,19 @@ El scope de las variables, métodos y funciones se determina de la siguiente man
 - Se puede añadir un elemento con una asignación, y eliminar un elemento con la función delete
 - Si queremos recorrer un map en un orden diferente al alfabetico, podemos utilizar un for con 2 variables y range
 
+## OOP - Estructuras
+- Go implementa la OOP mediante estructuras
+
 ## Librerias utiles
 - fmt: permite mostrar textos por pantalla
 - os: permite manejar cuestiones del sistema operativo
 - bufio: permite aceptar entradas por teclado
+- time: permite manejar fechas y tipos de datos fecha y hora - es un paquete de go
+
+### Librerias propias
+- En la carpeta del proyecto podemos crear una nueva carpeta con el nombre del paquete a crear, asi como el nombre del archivo principal.
+- En el archivo principal del proyecto definimos el nombre del paquete
+- Doc para modulos: https://go.dev/doc/tutorial/create-module
 
 ### Paquete fmt - verbos
 - %d - numérico, base 10
