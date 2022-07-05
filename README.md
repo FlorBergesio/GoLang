@@ -92,6 +92,11 @@ El scope de las variables, métodos y funciones se determina de la siguiente man
 
 ## OOP - Estructuras
 - Go implementa la OOP mediante estructuras
+- No puede poseer métodos, solo propiedades
+
+### Interfaces
+- Permite nombrar métodos que serán implementados por structs
+- No es necesario indicar explicitamente que interfaz utiliza un struct, Go lo detecta automaticamente
 
 ## Librerias utiles
 - fmt: permite mostrar textos por pantalla
