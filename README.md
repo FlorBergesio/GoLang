@@ -20,6 +20,7 @@ Para definir una variable se utilizan las sintaxis:
 Parseo:
 - Los numeros se pueden parsear a numeros enteros de la siguiente forma: int(variable_valor_int64)
 - Los string necesitan el uso de paquetes: fmt.Sprintf("%d", variable_valor_int64) o strconv.Itoa(int(variable_valor_int64))
+- Los valores nulos son "nil"
 
 ## Scope
 El scope de las variables, métodos y funciones se determina de la siguiente manera:
@@ -98,11 +99,15 @@ El scope de las variables, métodos y funciones se determina de la siguiente man
 - Permite nombrar métodos que serán implementados por structs
 - No es necesario indicar explicitamente que interfaz utiliza un struct, Go lo detecta automaticamente
 
+## Manejo de archivos
+Refer to /file_management/main.go
+
 ## Librerias utiles
-- fmt: permite mostrar textos por pantalla
+- fmt: permite mostrar textos por pantalla, grabar texto en archivos
 - os: permite manejar cuestiones del sistema operativo
 - bufio: permite aceptar entradas por teclado
 - time: permite manejar fechas y tipos de datos fecha y hora - es un paquete de go
+- io/ioutil: permite el manejo de archivos
 
 ### Librerias propias
 - En la carpeta del proyecto podemos crear una nueva carpeta con el nombre del paquete a crear, asi como el nombre del archivo principal.
