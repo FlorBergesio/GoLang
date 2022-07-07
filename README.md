@@ -125,3 +125,6 @@ Refer to /file_management/main.go
 - %s - string
 - %t - boolean
 - %v - valor variable
+
+### Paquete log - funciones
+- Fatalf - Función que muestra un mensaje personalizado de error, anexa información de fecha y hora del error, además de ejecutar una función os.Exit(1)
