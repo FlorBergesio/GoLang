@@ -102,12 +102,18 @@ El scope de las variables, métodos y funciones se determina de la siguiente man
 ## Manejo de archivos
 Refer to /file_management/main.go
 
+## Excepciones
+- Defer: Instrucción que se ejecuta si o si cuando una funcion termina, ya sea por un return, por un error o por llegar al fin de la misma
+- Panic: Instrucción para que el sistema aborte la ejecución
+- Recover: Permite recuperar la ejecución del programa tras un Panic. Se ejecuta cuando detecta un Panic. Se usan en conjunto con los Defer
+
 ## Librerias utiles
 - fmt: permite mostrar textos por pantalla, grabar texto en archivos
 - os: permite manejar cuestiones del sistema operativo
 - bufio: permite aceptar entradas por teclado
 - time: permite manejar fechas y tipos de datos fecha y hora - es un paquete de go
 - io/ioutil: permite el manejo de archivos
+- log: permite grabar en el log
 
 ### Librerias propias
 - En la carpeta del proyecto podemos crear una nueva carpeta con el nombre del paquete a crear, asi como el nombre del archivo principal.
@@ -118,3 +124,4 @@ Refer to /file_management/main.go
 - %d - numérico, base 10
 - %s - string
 - %t - boolean
+- %v - valor variable
