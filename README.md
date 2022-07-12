@@ -102,6 +102,19 @@ El scope de las variables, métodos y funciones se determina de la siguiente man
 ## Manejo de archivos
 Refer to /file_management/main.go
 
+## Paralelism
+
+### Rutinas go
+- Para que una funcion se ejecute de manera asincrona se le debe anteponer la instrucción "go" al llamado a la misma
+- Ejecutar una rutina con go no verifica que la función se haya terminado de ejecutar antes de terminar el programa
+
+### Channels
+- Nos permiten enviar información de una go routine hacia otra funcion u otra go routine, para que cada instrucción paralela pueda comunicarse y para poder tomar el control
+- Es un espacio de memoria, de dialogo. Cuando se aloje en este espacio un valor, la rutina que está pidiendo un valor a cambio, va a actuar en consecuencia. Mientras que no se reciba un valor, se detiene la ejecucion del resto del programa
+- Para asignar valores a un channel: nombre_channel <- valor
+- Para esperar un valor de un channel: nombre_variable := <- nombre_channel
+
+
 ## Excepciones
 - Defer: Instrucción que se ejecuta si o si cuando una funcion termina, ya sea por un return, por un error o por llegar al fin de la misma
 - Panic: Instrucción para que el sistema aborte la ejecución
@@ -114,6 +127,7 @@ Refer to /file_management/main.go
 - time: permite manejar fechas y tipos de datos fecha y hora - es un paquete de go
 - io/ioutil: permite el manejo de archivos
 - log: permite grabar en el log
+- strings: permite el manejo de strings
 
 ### Librerias propias
 - En la carpeta del proyecto podemos crear una nueva carpeta con el nombre del paquete a crear, asi como el nombre del archivo principal.
