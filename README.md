@@ -114,11 +114,13 @@ Refer to /file_management/main.go
 - Para asignar valores a un channel: nombre_channel <- valor
 - Para esperar un valor de un channel: nombre_variable := <- nombre_channel
 
-
 ## Excepciones
 - Defer: Instrucción que se ejecuta si o si cuando una funcion termina, ya sea por un return, por un error o por llegar al fin de la misma
 - Panic: Instrucción para que el sistema aborte la ejecución
 - Recover: Permite recuperar la ejecución del programa tras un Panic. Se ejecuta cuando detecta un Panic. Se usan en conjunto con los Defer
+
+## Web server
+Refer to /web_server.main.go
 
 ## Librerias utiles
 - fmt: permite mostrar textos por pantalla, grabar texto en archivos
@@ -128,6 +130,7 @@ Refer to /file_management/main.go
 - io/ioutil: permite el manejo de archivos
 - log: permite grabar en el log
 - strings: permite el manejo de strings
+- net/http: permite el manejo de webserver
 
 ### Librerias propias
 - En la carpeta del proyecto podemos crear una nueva carpeta con el nombre del paquete a crear, asi como el nombre del archivo principal.
