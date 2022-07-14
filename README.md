@@ -122,6 +122,9 @@ Refer to /file_management/main.go
 ## Web server
 Refer to /web_server.main.go
 
+## Middlewares
+- Son interceptores que permiten ejecutar instrucciones comunes a varias funciones que reciben y devuelven los mismos tipos de variables
+
 ## Librerias utiles
 - fmt: permite mostrar textos por pantalla, grabar texto en archivos
 - os: permite manejar cuestiones del sistema operativo
