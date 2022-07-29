@@ -125,6 +125,11 @@ Refer to /web_server.main.go
 ## Middlewares
 - Son interceptores que permiten ejecutar instrucciones comunes a varias funciones que reciben y devuelven los mismos tipos de variables
 
+## Testing
+- Para crear una prueba en Go, se debe crear un archivo cuyo nombre termine en "_test.go"
+- Para ejecutar las pruebas usamos el comando "go test"
+- go test main.go main_test.go
+
 ## Librerias utiles
 - fmt: permite mostrar textos por pantalla, grabar texto en archivos
 - os: permite manejar cuestiones del sistema operativo
